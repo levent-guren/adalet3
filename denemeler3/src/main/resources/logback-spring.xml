@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="Console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+			<!-- %d %p %C{1.} - %msg%n -->
+			     %p --- %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+
+	<!-- LOG everything at ERROR level -->
+	<root level="error">
+		<appender-ref ref="Console" />
+	</root>
+
+	<!-- LOG "sonutucu" at TRACE level -->
+	<logger name="tr.gov.adalet" level="trace" additivity="false">
+		<appender-ref ref="Console" />
+	</logger>
+	<logger name="org.springframework.boot.web.embedded.tomcat.TomcatWebServer" level="info" additivity="false">
+		<appender-ref ref="Console" />
+	</logger>
+
+</configuration>

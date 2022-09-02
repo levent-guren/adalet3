@@ -1,0 +1,1 @@
+docker run -e "SPRING_PROFILES_ACTIVE=docker" -p 8081:8081 adalet/veritabani

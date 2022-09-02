@@ -10,6 +10,7 @@ import lombok.extern.log4j.Log4j2;
 @SpringBootApplication
 @Log4j2
 public class Veritabani2Application implements CommandLineRunner {
+	@SuppressWarnings("el-syntax")
 	@Value("${server.port:port bulunamadı}")
 	private String port;
 

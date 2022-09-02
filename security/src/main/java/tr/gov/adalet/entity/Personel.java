@@ -16,6 +16,8 @@ public class Personel {
 	private int id;
 	private String adi;
 	private String email;
+	private String sifre;
+	private String rol;
 	@ManyToOne
 	private Bolum bolum;
 }
